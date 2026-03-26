@@ -1013,3 +1013,102 @@ p {
     padding: 0 20px;
   }
 }
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1.6fr 1fr;
+  gap: 32px;
+  align-items: start; /* ключевое */
+}
+
+.footer-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px 22px;
+}
+
+.footer-lang {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.footer-lang a.active {
+  font-weight: 700;
+}
+
+.footer-docs .footer-menu {
+  display: flex;
+  flex-direction: column;   /* ВАЖНО: в столбик */
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.footer-title {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #8aa0b6;
+  margin-bottom: 10px;
+}
+
+.footer-text {
+  font-size: 13px;       /* уменьшили */
+  line-height: 1.55;
+  color: #9fb3c8;
+}
+
+.footer-text strong {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.footer-description {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #6f859c;
+  margin-top: 8px;
+  max-width: 260px;
+}
+
+.footer-label {
+  color: #6f859c;
+}
+
+.footer-docs a {
+  font-size: 13px;
+  color: #c7d4e2;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  opacity: 0.85;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-docs a:hover {
+  color: #ffffff;
+  pacity: 1;
+}
+
+.footer-brand-line {
+  font-size: 14px;
+  color: #c7d4e2;
+}
+
+.muted-small {
+  font-size: 12px;
+  color: #6f859c;
+}
+
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
