@@ -1038,9 +1038,9 @@ p {
   font-weight: 700;
 }
 
-.footer-docs .footer-menu {
+.footer-docs .footer-links {
   display: flex;
-  flex-direction: column;   /* ВАЖНО: в столбик */
+  flex-direction: column;
   gap: 8px;
   align-items: flex-start;
 }
@@ -1093,7 +1093,7 @@ p {
 
 .footer-docs a:hover {
   color: #ffffff;
-  pacity: 1;
+  opacity: 1;
 }
 
 .footer-brand-line {
