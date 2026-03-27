@@ -318,22 +318,20 @@ p {
 }
 
 .section-title {
-  max-width: 1120px;
+  width: 100%;
+  max-width: none;
   margin: 0;
   line-height: 1.02;
   letter-spacing: -0.04em;
-  text-wrap: balance;
+  text-wrap: normal;
 }
 
 .section-intro {
-  max-width: 860px;
-  margin: 0 0 40px;
-  font-size: 20px;
-  line-height: 1.6;
+  max-width: 1000px;
 }
 
 .section-intro.narrow {
-  max-width: 760px;
+  max-width: 1000px;
 }
 
 /* HERO */
@@ -594,24 +592,21 @@ p {
   margin: 18px 0 0;
   padding: 0;
   display: grid;
-  gap: 12px;
-}
-
-.list li {
-  margin-bottom: 12px;
+  gap: 8px; /* было 12 */
 }
 
 .list li {
   position: relative;
   padding-left: 24px;
-  line-height: 1.65;
+  line-height: 1.5; /* было 1.65 */
+  margin-bottom: 0; /* убрать двойной отступ */
 }
 
 .list li::before {
   content: "";
   position: absolute;
   left: 0;
-  top: 10px;
+  top: 8px; /* было 10 — чуть подвинул под новый line-height */
   width: 8px;
   height: 8px;
   border-radius: 999px;
@@ -683,7 +678,7 @@ p {
 
 .value-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 18px;
   margin-top: 40px;
 }
@@ -1112,3 +1107,5 @@ p {
     gap: 24px;
   }
 }
+
+
